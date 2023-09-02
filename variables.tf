@@ -25,7 +25,7 @@ variable "cluster_name" {
 }
 
 variable "filename" {
-  description = "Output file name and path"
+  description = "Output file name and path. Must only be set if `generate_kubeconfig_file` is set to `true`."
   type        = string
   default     = "./kubeconfig"
 }
